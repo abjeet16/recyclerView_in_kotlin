@@ -33,7 +33,7 @@ class adapter(val context: Context,val itemList:ArrayList<element>) :
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         holder.photoImageView.setImageResource(itemList[position].photo);
-        holder.nameTextView.setText(itemList[position].name);
-        holder.studiesTextView.setText(itemList[position].studies);
+        holder.nameTextView.text = itemList[position].name;
+        holder.studiesTextView.text = itemList[position].studies;
     }
 }
